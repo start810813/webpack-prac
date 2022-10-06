@@ -1,0 +1,31 @@
+{
+  "name": "webpack-prac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "mini-css-extract-plugin": "^2.6.1",
+    "pug-html-loader": "^1.1.5",
+    "style-loader": "^3.3.1",
+    "tar-webpack-plugin": "^0.1.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "scripts": {
+    "build": "webpack --mode=development",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production",
+    "build:stag": "webpack --env NODE_ENV=staging",
+    "build:pack": "webpack --mode=production --env PACK",
+    "watch": "webpack --watch",
+    "serve": "webpack serve --mode=development --open"
+  },
+  "author": "",
+  "license": "ISC"
+}
